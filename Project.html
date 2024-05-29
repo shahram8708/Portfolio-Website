@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://i.pinimg.com/originals/0f/8b/28/0f8b2870896edcde8f6149fe2733faaf.jpg"
+        type="image/x-icon">
+    <title>Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .navbar {
+            background-color: #343a40;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .menu-items a {
+            margin: 0 15px;
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+
+        .navbar .toggle-button .bar {
+            height: 2px;
+            background-color: #fff;
+            margin: 5px;
+            width: 25px;
+        }
+
+        .topnav2,
+        .topnav3 {
+            background-color: white;
+            padding: 20px;
+            margin-top: 10px;
+        }
+
+        .topnav2 .nav2,
+        .topnav3 .nav4 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+        }
+
+        .nav3,
+        .nav5 {
+            font-size: 16px;
+        }
+
+        .nav5 .nav51 {
+            padding: 8px 0;
+        }
+
+        .search-container {
+            background-color: #ffffff;
+            padding: 20px 5px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        .search-container input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-container button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .search-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        .footer p {
+            margin: 10px 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            font-size: 16px;
+            color: #333;
+            background-color: #f0f2f5;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        .navbar {
+            background-color: #343a40;
+            color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 10%;
+        }
+
+        .navbar .logo {
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        .menu-items a {
+            margin: 0 15px;
+            text-transform: capitalize;
+            font-size: 18px;
+        }
+
+        .menu-items a.active {
+            border-bottom: 2px solid #007bff;
+        }
+
+        .intro-section {
+            text-align: center;
+            padding: 50px 20px;
+            background: url('https://c0.wallpaperflare.com/preview/672/984/942/laptop-computer-keyboard-technology.jpg') no-repeat center center/cover;
+            color: white;
+            background-color: rgba(255, 0, 0, 0.5);
+            background-blend-mode: overlay;
+        }
+
+        .project-section {
+            padding: 20px;
+            background: #ffffff;
+        }
+
+        .project-section h2 {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 0 50px;
+        }
+
+        .project {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">Project</div>
+        <nav class="menu-items">
+            <a href="index.html">Home</a>
+            <a href="Blog.html">Blog</a>
+        </nav>
+    </header>
+
+    <section id="home" class="intro-section">
+        <h1>Welcome to My Project Portfolio</h1>
+        <p>Discover my projects and explore what I've built.</p>
+    </section>
+    <div class="search-container">
+        <input type="text" placeholder="Search projects..." id="searchInput">
+        <button onclick="searchProjects()">Search</button>
+    </div>
+
+    <section id="projects" class="project-section">
+        <div class="topnav3">
+            <div class="nav4">project</div>
+            <hr>
+            <div class="nav5" class="project-grid">
+                <div class="nav51"><a href="#website">frontend website design</a></div>
+                <div class="nav51"><a href="#javascript">javascript exercise</a></div>
+                <div class="nav51"><a href="#ai">AI project</a></div>
+                <div class="nav51"><a href="#python">python project</a></div>
+                <div class="nav51"><a href="#internship">internship project</a></div>
+                <div class="nav51"><a href="#opencv">OpenCV Project</a></div>
+                <div class="nav51" id="website"><a href="#industrial">javascript project</a></div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="topnav3">
+            <div class="nav4">frontend website design</div>
+            <hr>
+            <div class="nav5" class="project-grid">
+                <div class="nav51"><a href="https://ekdkn.netlify.app/">EKDKN</a></div>
+                <div class="nav51"><a href="https://vgec.netlify.app/">VGEC</a></div>
+                <div class="nav51"><a href="https://infral.netlify.app/">Infral</a></div>
+                <div class="nav51"><a href="https://ramofficial.netlify.app/">Portfolio</a></div>
+                <div class="nav51"><a href="https://orderssss.netlify.app/">Order</a></div>
+                <div class="nav51"><a href="https://lifyy.netlify.app/">Netlify</a></div>
+                <div class="nav51"><a href="https://meeso.netlify.app/">meesho</a></div>
+                <div class="nav51"><a href="https://ram-profile.netlify.app/">Profile</a></div>
+                <div class="nav51"><a href="https://vgecg.netlify.app/">VGECG</a></div>
+                <div class="nav51"><a href="https://tcsr.netlify.app/">TCS</a></div>
+                <div class="nav51"><a href="https://guess-name-game.netlify.app/">Guess Game Prototype</a></div>
+                <div class="nav51" id="javascript"><a href="https://nipgr.netlify.app/">NIPGR</a></div>
+            </div>
+        </div>
+        <hr>
+        <div class="topnav3">
+            <div class="nav4">javascript exercise</div>
+            <hr>
+            <div class="nav5" class="project-grid">
+                <div class="nav51"><a href="https://light-on-off-pro.netlify.app/">light on and off</a></div>
+                <div class="nav51"><a href="https://calculatorsss.netlify.app/">calculator</a>
+                </div>
+                <div class="nav51"><a href="https://time-dates.netlify.app/">clock</a></div>
+                <div class="nav51"><a href="https://randoms-jokes.netlify.app/">random jokes</a></div>
+                <div class="nav51"><a href="https://swg-games.netlify.app/">snake, water, gun game</a></div>
+                <div class="nav51"><a href="https://guessng.netlify.app/">guess number game</a></div>
+                <div class="nav51"><a href="https://curency-calculator.netlify.app/">curency
+                        calculator</a></div>
+                <div class="nav51"><a href="https://generaters.netlify.app/">choice password</a>
+                </div>
+                <div class="nav51"><a href="https://ps-generate.netlify.app/">generate
+                        password</a></div>
+                <div class="nav51"><a href="https://add-server.netlify.app/">add data in
+                        server</a></div>
+                <div class="nav51"><a href="https://gtus.netlify.app/chat">chat bot</a></div>
+                <div class="nav51"><a href="https://alarm-sets.netlify.app/">alarm clock</a></div>
+                <div class="nav51"><a href="https://ttt-games.netlify.app/">tic tac toe</a></div>
+                <div class="nav51"><a href="https://qr-codess.netlify.app/">QR Code Generate</a>
+                </div>
+                <div class="nav51"><a href="https://captcha-codes.netlify.app/">Captcha Code</a>
+                </div>
+                <div class="nav51" id="industrial"><a href="https://light-on-off-pro.netlify.app/next.html">Light</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="topnav3">
+            <div class="nav4">javascript project</div>
+            <hr>
+            <div class="nav5">
+                <div class="nav51"><a href="https://images-to-pdf.netlify.app/">Image To PDF</a></div>
+                <div class="nav51"><a href="https://pdfs-mergers.netlify.app/">PDF Merger</a></div>
+                <div class="nav51"><a href="https://chats-groups.netlify.app/">WhatsChat</a></div>
+                <div class="nav51"><a href="https://certificate-generates.netlify.app/">Certificate Generate</a></div>
+                <div class="nav51"><a href="https://calenders.netlify.app/">Calender</a></div>
+                <div class="nav51"><a href="https://chess-ram.netlify.app/">Chess Master</a></div>
+                <div class="nav51"><a href="https://cars-race.netlify.app/">Car Race</a></div>
+                <div class="nav51"><a href="https://txt-editors.netlify.app/">Text Editor</a></div>
+                <div class="nav51"><a href="https://clouds-data.netlify.app/">Cloud Data</a></div>
+                <div class="nav51"><a href="https://folder-compress.netlify.app/">Folder Compress</a></div>
+                <div class="nav51"><a href="https://music-plays.netlify.app/">Music Player</a></div>
+                <div class="nav51"><a href="https://image-editors.netlify.app/">Image Editor</a></div>
+                <div class="nav51"><a href="https://weather-report-q1il.onrender.com">Weather Report</a></div>
+                <div class="nav51"><a href="https://github-authentication.onrender.com">github authentication</a></div>
+                <div class="nav51"><a href="https://form-application-jfx4.onrender.com">form application
+                    </a></div>
+                <div class="nav51"><a href="https://login-fgcb.onrender.com">Login</a></div>
+                <div class="nav51"><a href="https://comment-p42s.onrender.com">Comment</a></div>
+                <div class="nav51"><a href="https://website-host-2qc2.onrender.com">website host
+                    </a></div>
+                <div class="nav51"><a href="https://payment-i2cr.onrender.com">payment</a></div>
+                <div class="nav51"><a href="https://email-login-qtgk.onrender.com">email login</a></div>
+                <div class="nav51"><a href="https://news-4asi.onrender.com">news</a></div>
+                <div class="nav51"><a href="https://bluetooths.netlify.app/">bluetooth connection</a></div>
+                <div class="nav51"><a href="https://google-logins.netlify.app/">Google Login</a></div>
+                <div class="nav51"><a href="https://emails-send.netlify.app/">Email MSG send</a></div>
+                <div class="nav51"><a href="https://chat-login.netlify.app/">Number login</a></div>
+                <div class="nav51"><a href="https://github.com/shahram8708/Phone-Call/">Phone Call</a></div>
+                <div class="nav51"><a href="https://github.com/shahram8708/Browser">Web Browser</a></div>
+                <div class="nav51"><a href="https://latest-product.netlify.app/">Latest Product Update</a></div>
+                <div class="nav51" id="python"><a href="https://youtube-video-download-p6ap.onrender.com">Video
+                        Downloader</a></div>
+                <div class="nav51"><a href="https://talktroop.netlify.app/">TalkTroop chat</a></div>
+            </div>
+        </div>
+        <hr>
+        <div class="topnav3">
+            <div class="nav4">python project</div>
+            <hr>
+            <div class="nav5" class="project-grid">
+                <div class="nav51"><a href="https://translator-iqbw.onrender.com">Translator</a></div>
+                <div class="nav51"><a href="https://musics-player.onrender.com">Music Player</a></div>
+                <div class="nav51" id="opencv"><a href="https://img-pdf.onrender.com">Image to pdf</a></div>
+                <div class="nav51"><a href="https://github.com/shahram8708/Ludo-Python">Ludo Game</a></div>
+                <div class="nav51"><a href="https://github.com/shahram8708/Appointment">Appointment</a></div>
+            </div>
+        </div>
+        <hr>
+        <div class="topnav3">
+            <div class="nav4">OpenCV project</div>
+            <hr>
+            <div class="nav5" class="project-grid">
+                <div class="nav51"><a href="https://github.com/shahram8708/Palm-Finger-Count/blob/main/finger.py">Finger
+                        Open & Closed Count</a></div>
+                <div class="nav51"><a href="https://github.com/shahram8708/Palm-Finger-Count/blob/main/fing.py">Finger
+                        Count</a></div>
+                <div class="nav51"><a
+                        href="https://github.com/shahram8708/Palm-Finger-Count/blob/main/finger-name.py">Finger name
+                        detect</a></div>
+                <div class="nav51"><a href="https://github.com/shahram8708/Face-Detection-Analysis">Face Detection and
+                        Analysis</a></div>
+                <div class="nav51"><a href="https://github.com/shahram8708/Hand-Gesture-Drawing/">Hand Gesture
+                        Drawing</a></div>
+                <div class="nav51" id="ai"><a
+                        href="https://github.com/shahram8708/Palm-Finger-Count/blob/main/human.py">People count</a>
+                </div>
+                <div class="nav51"><a href="https://github.com/shahram8708/Palm-Finger-Count/blob/main/palm.py">palm
+                        hand count</a></div>
+            </div>
+        </div>
+        <hr>
+        <div class="topnav3">
+            <div class="nav4">AI project</div>
+            <hr>
+            <div class="nav5" class="project-grid">
+                <div class="nav51"><a href="https://ai-image-generation-78e0.onrender.com">image generator</a></div>
+                <div class="nav51"><a href="https://ai-video-summarizer.onrender.com">video summarizer</a></div>
+                <div class="nav51"><a href="https://ai-text-to-audio-converter.onrender.com">text to audio
+                        converter</a></div>
+                <div class="nav51"><a href="https://ai-image-detection.onrender.com">image detection</a></div>
+                <div class="nav51"><a href="https://ai-chat-pjph.onrender.com">ChatBot 1</a></div>
+                <div class="nav51"><a href="https://ai-chatbot-2.onrender.com">ChatBot 2</a></div>
+                <div class="nav51"><a href="https://ai-chatbot-3.onrender.com">ChatBot 3</a></div>
+                <div class="nav51"><a href="https://ai-doubt-clear.onrender.com">Doubt Clear</a></div>
+                <div class="nav51"><a href="https://story-generator-borm.onrender.com">Story generator</a></div>
+                <div class="nav51"><a href="https://news-detector.onrender.com">news detector</a></div>
+                <div class="nav51"><a href="https://dialogue-generator.onrender.com">dialogue generator</a></div>
+                <div class="nav51"><a href="https://meme-generator-ecz3.onrender.com">Meme Generator</a></div>
+                <div class="nav51"><a href="https://ai-code-generative.onrender.com">code generator 1</a></div>
+                <div class="nav51"><a href="https://ai-code-generator-2.onrender.com">code generator 2</a></div>
+                <div class="nav51"><a href="https://code-generator-3.onrender.com">Code generator 3</a></div>
+                <div class="nav51"><a href="https://ai-code-generator-4.onrender.com">code generator 4</a></div>
+                <div class="nav51"><a href="https://ai-ttt-game.netlify.app/">Tic-Tac-Toe Game</a></div>
+                <div class="nav51"><a href="https://ai-text-video-generator.netlify.app/">Text-Video generator</a>
+                </div>
+                <div class="nav51"><a href="https://shayri-generator-wcz5.onrender.com">shayri generator</a></div>
+                <div class="nav51"><a href="https://song-lyrics-generator.onrender.com">Song lyrics generator</a></div>
+                <div class="nav51"><a href="https://code-converter-a46l.onrender.com">code converter</a></div>
+                <div class="nav51"><a href="https://ai-green-tips.onrender.com">Green Tips</a></div>
+                <div class="nav51"><a href="https://textmagicai.netlify.app/">Text Summarization</a></div>
+                <div class="nav51"><a href="https://image-classify.netlify.app">Image Classification</a></div>
+                <div class="nav51"><a href="https://metatune.onrender.com">MetaTune</a></div>
+                <div class="nav51"><a href="https://codemint-studio.onrender.com">CodeMint studio</a></div>
+                <div class="nav51"><a href="https://ai-powered-sentiment-analysis.onrender.com">Sentiment Analysis</a></div>
+                <div class="nav51" id="internship"><a href="https://ai-generater.netlify.app/">story & poetry
+                        generator</a></div>
+            </div>
+        </div>
+        <hr>
+        <div class="topnav3">
+            <div class="nav4">internship project</div>
+            <hr>
+            <div class="nav5" class="project-grid">
+                <div class="nav51">
+                    <h2>Python Internship</h2>
+                    <ol>
+                        <li>
+                            <h3>To-Do List Application:</h3>
+                            <p>Manage tasks efficiently with a Python-based command-line or GUI app. Create, update, and
+                                track to-do lists effortlessly.</p>
+                            <a href="https://github.com/shahram8708/Python-Internship">To-Do List Application</a>
+                        </li>
+                        <li>
+                            <h3>Calculator:</h3>
+                            <p>Design a simple calculator for basic arithmetic operations. Input two numbers and the
+                                desired
+                                operation to get the result instantly.</p>
+                            <a href="https://github.com/shahram8708/Python-Internship">Calculator</a>
+                        </li>
+                        <li>
+                            <h3>Password Generator:</h3>
+                            <p>Generate strong, random passwords tailored to your desired length and complexity. Simply
+                                specify the password length, and get a secure password generated on the spot.</p>
+                            <a href="https://github.com/shahram8708/Python-Internship">Password Generator</a>
+                        </li>
+                        <li>
+                            <h3>Weather Forecast Application:</h3>
+                            <p>Get current weather updates for any city or zip code. Retrieve temperature, humidity,
+                                wind
+                                speed, and weather description in a user-friendly format.</p>
+                            <a href="https://github.com/shahram8708/Python-Internship">Weather Forecast Application</a>
+                        </li>
+                        <li>
+                            <h3>Quiz Game:</h3>
+                            <p>Engage in a quiz game with multiple-choice or fill-in-the-blank questions on various
+                                topics.
+                                Track your score, receive feedback on answers, and enjoy a challenging experience.</p>
+                            <a href="https://github.com/shahram8708/Python-Internship">Quiz Game</a>
+                        </li>
+                        <li>
+                            <h3>Expense Tracker:</h3>
+                            <p>Manage expenses effectively with a command-line expense tracker. Add, list, and
+                                categorize
+                                expenses, calculate totals, generate reports, and save data for future reference.</p>
+                            <a href="https://github.com/shahram8708/Python-Internship">Expense Tracker</a>
+                        </li>
+                        <li>
+                            <h3>User Registration Endpoint:</h3>
+                            <p>Implement a Flask route for user registration, ensuring input validation and secure
+                                storage.</p>
+                            <a href="https://github.com/shahram8708/User-Registration">User Registration</a>
+                        </li>
+                        <li>
+                            <h3>JSON Data Handling and Processing:</h3>
+                            <p>Write a Python script to process interview questions from a JSON file, filtering and
+                                formatting them.</p>
+                            <a href="https://github.com/shahram8708/JSON-Data-Handling-and-Processing">JSON Data
+                                Handling and Processing</a>
+                        </li>
+                        <li>
+                            <h3>Simple Recommendation System:</h3>
+                            <p>Develop a Python function for recommending interview questions based on candidate
+                                attributes.</p>
+                            <a href="https://github.com/shahram8708/Simple-Recommendation-System">Simple Recommendation
+                                System</a>
+                        </li>
+                    </ol>
+                </div>
+                <hr>
+                <div class="nav51">
+                    <h2>Javascript internship</h2>
+                    <ol>
+                        <li>
+                            <h3>Task List</h3>
+                            <p>Create a web-based task list application for managing to-do items.</p>
+                            <a href="https://github.com/shahram8708/Javascript-internship">Task List</a>
+                        </li>
+                        <li>
+                            <h3>Portfolio</h3>
+                            <p>Create a personal portfolio website to showcase your skills and projects.</p>
+                            <a href="https://github.com/shahram8708/Javascript-internship">Portfolio</a>
+                        </li>
+                        <li>
+                            <h3>Digital Clock</h3>
+                            <p>Develop a digital clock that displays the current time and updates in real-time.</p>
+                            <a href="https://github.com/shahram8708/Javascript-internship">Digital Clock</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+    <footer class="footer">
+        <p class="copyright">Copyright &copy; 2024 Ram Official. All Rights Reserved.</p>
+        <p class="last-updated" id="lastUpdated"></p>
+        <p class="visit-count" id="visitCount"></p>
+    </footer>
+
+    <script>
+
+        function setVisitCount() {
+            var visitCount = parseInt(localStorage.getItem('visitCount')) || 0;
+            visitCount++;
+            localStorage.setItem('visitCount', visitCount);
+            document.getElementById('visitCount').textContent = 'You Visits This Website : ' + visitCount + ' Time';
+        }
+
+        function displayLastUpdated() {
+            var lastUpdatedElement = document.getElementById('lastUpdated');
+            var lastUpdatedDate = new Date(document.lastModified);
+            lastUpdatedElement.textContent = 'Last Updated: ' + lastUpdatedDate.toLocaleDateString();
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            setVisitCount();
+            displayLastUpdated();
+        });
+        function searchProjects() {
+            var input, filter, nav5, nav51, a, i, txtValue;
+            input = document.getElementById('searchInput');
+            filter = input.value.toUpperCase();
+            nav5 = document.getElementsByClassName('nav5');
+            for (i = 0; i < nav5.length; i++) {
+                nav51 = nav5[i].getElementsByClassName('nav51');
+                for (var j = 0; j < nav51.length; j++) {
+                    a = nav51[j].getElementsByTagName("a")[0];
+                    txtValue = a.textContent || a.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        nav51[j].style.display = "";
+                    } else {
+                        nav51[j].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
