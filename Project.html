@@ -232,6 +232,27 @@
         .nav51 .collab-link:hover {
             background-color: #0056b3;
         }
+
+        #scrollToTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 32px;
+            line-height: 60px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #scrollToTopBtn:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 
@@ -252,6 +273,7 @@
         <input type="text" placeholder="Search projects..." id="searchInput">
         <button onclick="searchProjects()">Search</button>
     </div>
+    <button onclick="scrollToTop()" id="scrollToTopBtn">&#8593;</button>
     <section class="project-section">
         <div class="topnav3">
             <div class="nav4">Collaborate</div>
@@ -811,6 +833,34 @@
             </div>
             <hr>
             <div class="nav5" class="project-grid">
+                <h2>generative AI internship</h2>
+                <div class="nav51">
+                    <h3>Text Generator with GPT 2</h3>
+                    <p>The Text Generator with GPT 2 project aims to provide advanced text generation capabilities using
+                        the GPT-2 model.</p>
+                    <a href="https://github.com/shahram8708/Text-Generator-with-GPT-2">Text Generator with GPT 2</a>
+                </div>
+                <div class="nav51">
+                    <h3>DALL-E mini Image Generator</h3>
+                    <p>The DALL-E mini Image Generator project focuses on creating images based on textual descriptions
+                        using cutting-edge AI technology.</p>
+                    <a href="https://github.com/shahram8708/DALL-E-mini-Image-Generator">DALL-E mini Image Generator</a>
+                </div>
+                <div class="nav51">
+                    <h3>Markov Chain Text Generator</h3>
+                    <p>The Markov Chain Text Generator project utilizes probabilistic models to generate text based on
+                        patterns observed in input data, showcasing its capability in automated content creation.</p>
+                    <a href="https://github.com/shahram8708/Markov-Chain-Text-Generator">Markov Chain Text Generator</a>
+                </div>
+                <div class="nav51">
+                    <h3>Image to Image Translation</h3>
+                    <p>The Image to Image Translation project employs deep learning techniques to convert images from
+                        one domain to another, demonstrating its proficiency in visual transformation tasks.</p>
+                    <a href="https://github.com/shahram8708/Image-to-Image-Translation">Image to Image Translation</a>
+                </div>
+            </div>
+            <hr>
+            <div class="nav5" class="project-grid">
                 <h2>Javascript internship</h2>
                 <div class="nav51">
                     <h3>Task List</h3>
@@ -912,6 +962,13 @@
             if (!matchFound) {
                 alert("No project found with the given name.");
             }
+        }
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         }
 
     </script>
