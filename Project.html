@@ -78,31 +78,17 @@
 
         .search-container {
             background-color: #ffffff;
-            padding: 20px 5px;
+            padding: 20px 40px;
             text-align: center;
             position: sticky;
             top: 0;
         }
 
         .search-container input[type="text"] {
-            width: 70%;
+            width: 100%;
             padding: 10px;
-            margin-right: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
-        }
-
-        .search-container button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .search-container button:hover {
-            background-color: #0056b3;
         }
 
         .footer {
@@ -270,8 +256,7 @@
         <p>Discover my projects and explore what I've built.</p>
     </section>
     <div class="search-container">
-        <input type="text" placeholder="Search projects..." id="searchInput">
-        <button onclick="searchProjects()">Search</button>
+        <input type="text" placeholder="Search projects..." id="searchInput" onkeyup="searchProjects()">
     </div>
     <button onclick="scrollToTop()" id="scrollToTopBtn">&#8593;</button>
     <section class="project-section">
@@ -539,34 +524,49 @@
                 <div class="nav51"><a href="https://translator-iqbw.onrender.com">Translator</a>
                     <p>Online tool for translating text between different languages.</p>
                 </div>
-                <div class="nav51"><a href="https://www.dropbox.com/scl/fi/d9cnvj14dx7zgdw9t1yt6/app.exe?rlkey=66p95p5a6gi62beb02lgk6mxw&st=9myihrqv&dl=0">Vision Record</a>
-                    <p>Vision Record is a professional screen recording application that provides a user-friendly interface for capturing high-quality screen activity with an option to visualize the cursor.</p>
+                <div class="nav51"><a
+                        href="https://www.dropbox.com/scl/fi/d9cnvj14dx7zgdw9t1yt6/app.exe?rlkey=66p95p5a6gi62beb02lgk6mxw&st=9myihrqv&dl=0">Vision
+                        Record</a>
+                    <p>Vision Record is a professional screen recording application that provides a user-friendly
+                        interface for capturing high-quality screen activity with an option to visualize the cursor.</p>
                 </div>
                 <div class="nav51"><a href="https://musics-player.onrender.com">Music Player</a>
                     <p>Enjoy your favorite songs with this online music player.</p>
                 </div>
                 <div class="nav51"><a href="https://github.com/shahram8708/Apex-Browser">Apex Browser</a>
-                    <p>Apex Browser is a feature-rich PyQt5-based web browser application with tabbed browsing, incognito mode, bookmarks, history management, and developer tools, designed for a seamless browsing experience.</p>
+                    <p>Apex Browser is a feature-rich PyQt5-based web browser application with tabbed browsing,
+                        incognito mode, bookmarks, history management, and developer tools, designed for a seamless
+                        browsing experience.</p>
                 </div>
                 <div class="nav51"><a href="https://easy-user-verification.onrender.com">Easy User Verification</a>
-                    <p>A Flask web application for user registration with email verification and a personalized dashboard.</p>
+                    <p>A Flask web application for user registration with email verification and a personalized
+                        dashboard.</p>
                 </div>
                 <div class="nav51"><a href="https://codeversehub.onrender.com/">CodeVerseHub</a>
-                    <p>CodeVerseHub is an all-in-one code editor that allows you to write and execute code in any programming language with just one click.</p>
+                    <p>CodeVerseHub is an all-in-one code editor that allows you to write and execute code in any
+                        programming language with just one click.</p>
                 </div>
                 <div class="nav51"><a href="https://devhub-studio.onrender.com">DevHub Studio</a>
-                    <p>DevHub Studio is a comprehensive code editor that supports writing and executing code in any programming language with a single click.</p>
+                    <p>DevHub Studio is a comprehensive code editor that supports writing and executing code in any
+                        programming language with a single click.</p>
                 </div>
                 <div class="nav51"><a href="https://stock-pulse-info.onrender.com/">Stock Pulse Info</a>
-                    <p>Stock Pulse Info is a Flask-based web application that provides comprehensive real-time and historical data for stocks, including financial statements, analyst ratings, economic indicators, and fundamental analysis, empowering users with insights to make informed investment decisions.</p>
+                    <p>Stock Pulse Info is a Flask-based web application that provides comprehensive real-time and
+                        historical data for stocks, including financial statements, analyst ratings, economic
+                        indicators, and fundamental analysis, empowering users with insights to make informed investment
+                        decisions.</p>
                 </div>
                 <div class="nav51"><a href="https://github.com/shahram8708/CashFlow-Central">CashFlow Central</a>
                     <p>CashFlow Central is a Flask-based web application designed to help users manage expenses, set
                         budgets, and track savings goals with secure authentication and dynamic visualizations.</p>
                 </div>
                 <div class="nav51"><a href="https://send-email-yjh9.onrender.com/">Send Email</a>
-                    <p>This website allows users to send emails via a form, view sent emails, and manage them through a simple interface."
+                    <p>This website allows users to send emails via a form, view sent emails, and manage them through a
+                        simple interface."
                     </p>
+                </div>
+                <div class="nav51"><a href="https://ai-image-generation-78e0.onrender.com">Image Search Engine</a>
+                    <p>A powerful tool to find and explore images across the web.</p>
                 </div>
                 <div class="nav51" id="opencv"><a href="https://img-pdf.onrender.com">Image to pdf</a>
                     <p>Convert images to PDF files quickly and easily.</p>
@@ -625,9 +625,6 @@
             <div class="nav4">AI project</div>
             <hr>
             <div class="nav5" class="project-grid">
-                <div class="nav51"><a href="https://ai-image-generation-78e0.onrender.com">Image Generator</a>
-                    <p>Generate artificial images using AI algorithms.</p>
-                </div>
                 <div class="nav51"><a href="https://ai-video-summarizer.onrender.com">Video Summarizer</a>
                     <p>Automatically summarize videos to provide key insights.</p>
                 </div>
@@ -704,64 +701,86 @@
                     <p>Automatically generate metadata for music tracks using AI-powered algorithms.</p>
                 </div>
                 <div class="nav51"><a href="https://echoelite.onrender.com">EchoElite</a>
-                    <p>EchoElite is an interactive AI assistant web application that utilizes speech recognition and synthesis for a user-friendly conversational experience.</p>
+                    <p>EchoElite is an interactive AI assistant web application that utilizes speech recognition and
+                        synthesis for a user-friendly conversational experience.</p>
                 </div>
                 <div class="nav51"><a href="https://chatmaven.onrender.com">ChatMaven</a>
-                    <p>ChatMaven is a web-based chatbot application built with Flask, utilizing generative AI for interactive responses, supporting Markdown formatting, message copying, and audio playback functionalities.</p>
+                    <p>ChatMaven is a web-based chatbot application built with Flask, utilizing generative AI for
+                        interactive responses, supporting Markdown formatting, message copying, and audio playback
+                        functionalities.</p>
                 </div>
                 <div class="nav51"><a href="https://convo-genius.onrender.com">Convo Genius 🤖</a>
-                    <p>Convo Genius 🤖 is an AI-powered chat application developed using Flask, featuring interactive chat functionalities and a user-friendly interface.</p>
+                    <p>Convo Genius 🤖 is an AI-powered chat application developed using Flask, featuring interactive
+                        chat functionalities and a user-friendly interface.</p>
                 </div>
                 <div class="nav51"><a href="https://clarity-docs.onrender.com">Clarity Docs 🤖</a>
-                    <p>Clarity Docs is a web application that allows users to upload and analyze PDFs, generating detailed AI-powered summaries with interactive features.</p>
+                    <p>Clarity Docs is a web application that allows users to upload and analyze PDFs, generating
+                        detailed AI-powered summaries with interactive features.</p>
                 </div>
                 <div class="nav51"><a href="https://vidanalytica.onrender.com">VidAnalytica 🤖</a>
-                    <p>VidAnalytica is a powerful tool that lets you upload any video and ask specific questions about it, providing you with detailed insights and summaries based on its content.</p>
+                    <p>VidAnalytica is a powerful tool that lets you upload any video and ask specific questions about
+                        it, providing you with detailed insights and summaries based on its content.</p>
                 </div>
                 <div class="nav51"><a href="https://query-vista.onrender.com">Query Vista</a>
-                    <p>Query Vista is a web application that lets you upload multiple images, ask a question, and receive comprehensive answers based on the content of those images.</p>
+                    <p>Query Vista is a web application that lets you upload multiple images, ask a question, and
+                        receive comprehensive answers based on the content of those images.</p>
                 </div>
                 <div class="nav51"><a href="https://pdf-visionary.onrender.com">PDF Visionary</a>
-                    <p>Transform your PDFs into interactive insights, allowing you to ask questions and get detailed responses directly from the document's content.</p>
+                    <p>Transform your PDFs into interactive insights, allowing you to ask questions and get detailed
+                        responses directly from the document's content.</p>
                 </div>
                 <div class="nav51"><a href="https://health-tips.onrender.com">Health Tips</a>
                     <p>Get personalized health tips and treatment advice tailored to your needs!.</p>
                 </div>
                 <div class="nav51"><a href="https://smart-frame.onrender.com">Smart Frame</a>
-                    <p>Smart Frame AI provides real-time analysis of video frames to deliver insightful content based on the detected results.</p>
+                    <p>Smart Frame AI provides real-time analysis of video frames to deliver insightful content based on
+                        the detected results.</p>
                 </div>
                 <div class="nav51"><a href="https://vidsage.onrender.com">VidSage</a>
-                    <p>VidSage is a Flask web application that allows users to upload videos, receive AI-generated insights, and interact with the content through a user-friendly interface.</p>
+                    <p>VidSage is a Flask web application that allows users to upload videos, receive AI-generated
+                        insights, and interact with the content through a user-friendly interface.</p>
                 </div>
                 <div class="nav51"><a href="https://audio-genie.onrender.com">Audio Genie</a>
-                    <p>Audio Genie is a web application that analyzes audio files and generates insightful summaries with AI, featuring an intuitive interface for seamless user interaction.</p>
+                    <p>Audio Genie is a web application that analyzes audio files and generates insightful summaries
+                        with AI, featuring an intuitive interface for seamless user interaction.</p>
                 </div>
                 <div class="nav51"><a href="https://pdfnexus.netlify.app">PDF Nexus</a>
-                    <p>Transform your PDFs into interactive insights, allowing you to ask questions and get detailed responses directly from the document's content.</p>
+                    <p>Transform your PDFs into interactive insights, allowing you to ask questions and get detailed
+                        responses directly from the document's content.</p>
                 </div>
                 <div class="nav51"><a href="https://melody-metrics.onrender.com">Melody Metrics</a>
-                    <p>Welcome to Melody Metrics, the advanced tool for identifying and analyzing music tracks, enabling you to discover songs by recording audio snippets just like Shazam.</p>
+                    <p>Welcome to Melody Metrics, the advanced tool for identifying and analyzing music tracks, enabling
+                        you to discover songs by recording audio snippets just like Shazam.</p>
                 </div>
-                <div class="nav51"><a href="https://www.dropbox.com/scl/fi/d9cnvj14dx7zgdw9t1yt6/app.exe?rlkey=66p95p5a6gi62beb02lgk6mxw&st=xb2biewa&dl=0">Smart Screen AI</a>
-                    <p>Smart Screen AI is a sophisticated application that enables seamless screen recording, advanced AI-driven video processing, and interactive text-to-speech features, all through a user-friendly interface.</p>
+                <div class="nav51"><a
+                        href="https://www.dropbox.com/scl/fi/d9cnvj14dx7zgdw9t1yt6/app.exe?rlkey=66p95p5a6gi62beb02lgk6mxw&st=xb2biewa&dl=0">Smart
+                        Screen AI</a>
+                    <p>Smart Screen AI is a sophisticated application that enables seamless screen recording, advanced
+                        AI-driven video processing, and interactive text-to-speech features, all through a user-friendly
+                        interface.</p>
                 </div>
                 <div class="nav51"><a href="https://ai-image2code.onrender.com">AI Image2Code</a>
-                    <p>AI Image2Code is a web application that transforms uploaded images into code snippets by leveraging advanced AI, making coding from visual content effortless and intuitive.</p>
+                    <p>AI Image2Code is a web application that transforms uploaded images into code snippets by
+                        leveraging advanced AI, making coding from visual content effortless and intuitive.</p>
                 </div>
                 <div class="nav51"><a href="https://smartcapture.onrender.com">Smart Capture</a>
-                    <p>Smart Capture is a web application that allows users to record videos, upload them for analysis, and receive a textual summary of the content.</p>
+                    <p>Smart Capture is a web application that allows users to record videos, upload them for analysis,
+                        and receive a textual summary of the content.</p>
                 </div>
                 <div class="nav51"><a href="https://brieflypdf.netlify.app/">Briefly PDF</a>
-                    <p>Briefly PDF is a web application that enables users to upload multiple PDF files, enter a prompt, and receive a summarized response using AI technology.</p>
+                    <p>Briefly PDF is a web application that enables users to upload multiple PDF files, enter a prompt,
+                        and receive a summarized response using AI technology.</p>
                 </div>
                 <div class="nav51"><a href="https://codemint-studio.onrender.com">CodeMint Studio</a>
                     <p>Online platform for coding and programming projects with AI integration.</p>
                 </div>
                 <div class="nav51"><a href="https://insight-ai-web.onrender.com">Insight AI Web</a>
-                    <p>Insight AI Web leverages advanced AI to effortlessly analyze and extract valuable insights from any web page, providing you with comprehensive answers and actionable intelligence.</p>
+                    <p>Insight AI Web leverages advanced AI to effortlessly analyze and extract valuable insights from
+                        any web page, providing you with comprehensive answers and actionable intelligence.</p>
                 </div>
                 <div class="nav51"><a href="https://codegenius-hub.onrender.com">CodeGenius Hub</a>
-                    <p>CodeGenius Hub is a web application that allows users to input code, receive immediate feedback on its output and correctness, and get corrected versions of their code.</p>
+                    <p>CodeGenius Hub is a web application that allows users to input code, receive immediate feedback
+                        on its output and correctness, and get corrected versions of their code.</p>
                 </div>
                 <div class="nav51"><a href="https://ai-powered-sentiment-analysis.onrender.com">Sentiment
                         Analysis</a>
@@ -798,13 +817,14 @@
                         competition, featuring MRI image preprocessing, a ResNet50-based CNN model, and comprehensive
                         training and prediction pipelines.</p>
                 </div>
-                <div class="nav51"><a
-                        href="https://objectvision-pro.netlify.app/">ObjectVision Pro</a>
-                    <p>ObjectVision Pro is a web-based application leveraging TensorFlow.js and COCO-SSD model for real-time object detection directly from webcam feeds, enhancing interactive experiences with AI technology.</p>
+                <div class="nav51"><a href="https://objectvision-pro.netlify.app/">ObjectVision Pro</a>
+                    <p>ObjectVision Pro is a web-based application leveraging TensorFlow.js and COCO-SSD model for
+                        real-time object detection directly from webcam feeds, enhancing interactive experiences with AI
+                        technology.</p>
                 </div>
-                <div class="nav51"><a
-                        href="https://github.com/shahram8708/AI-SwiftBot">AI SwiftBot</a>
-                    <p>AI SwiftBot is an interactive chatbot application using Flask and GPT-Neo, featuring a user-friendly interface with a dynamic loading animation.</p>
+                <div class="nav51"><a href="https://github.com/shahram8708/AI-SwiftBot">AI SwiftBot</a>
+                    <p>AI SwiftBot is an interactive chatbot application using Flask and GPT-Neo, featuring a
+                        user-friendly interface with a dynamic loading animation.</p>
                 </div>
                 <div class="nav51" id="internship"><a href="https://ai-generater.netlify.app/">Story & Poetry
                         Generator</a>
@@ -913,26 +933,31 @@
                 </div>
             </div>
             <hr>
-             <div class="nav5" class="project-grid">
+            <div class="nav5" class="project-grid">
                 <h2>Artificial Intelligence Internship</h2>
                 <div class="nav51">
                     <h3>Face Detection and Recognition</h3>
-                    <p>Face Detection and Recognition project using Python, Flask, and OpenCV to detect and optionally recognize faces in uploaded images.</p>
-                    <a href="https://github.com/shahram8708/Face-Detection-and-Recognition">Face Detection and Recognition</a>
+                    <p>Face Detection and Recognition project using Python, Flask, and OpenCV to detect and optionally
+                        recognize faces in uploaded images.</p>
+                    <a href="https://github.com/shahram8708/Face-Detection-and-Recognition">Face Detection and
+                        Recognition</a>
                 </div>
                 <div class="nav51">
                     <h3>Tic-Tac-Toe AI</h3>
-                    <p>An interactive Tic-Tac-Toe game featuring an AI opponent using the minimax algorithm, built with HTML, CSS, and JavaScript.</p>
+                    <p>An interactive Tic-Tac-Toe game featuring an AI opponent using the minimax algorithm, built with
+                        HTML, CSS, and JavaScript.</p>
                     <a href="https://github.com/shahram8708/TIC-TAC-TOE-AI">Tic-Tac-Toe</a>
                 </div>
-                 <div class="nav51">
+                <div class="nav51">
                     <h3>Rule-Based Chatbot</h3>
-                    <p>An interactive rule-based chatbot implemented in Flask for responding to predefined queries and demonstrating basic conversational AI principles.</p>
+                    <p>An interactive rule-based chatbot implemented in Flask for responding to predefined queries and
+                        demonstrating basic conversational AI principles.</p>
                     <a href="https://github.com/shahram8708/Rule-Based-Chatbot">Rule-Based Chatbot</a>
                 </div>
-                 <div class="nav51">
+                <div class="nav51">
                     <h3>Image Captioning AI</h3>
-                    <p>A project utilizing deep learning to generate descriptive captions for images using pre-trained models and natural language processing techniques.</p>
+                    <p>A project utilizing deep learning to generate descriptive captions for images using pre-trained
+                        models and natural language processing techniques.</p>
                     <a href="https://github.com/shahram8708/Image-Captioning-AI">Image Captioning AI</a>
                 </div>
             </div>
